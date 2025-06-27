@@ -1,0 +1,398 @@
+/* ========== RESET & GLOBAL ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #4c4c4d;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ========== NAVIGATION ========== */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: 80px;
+  background-color: #1d1e1e;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links ul li {
+  margin: 0 20px;
+}
+
+.nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.nav-links ul li a:hover {
+  color: #95a1a1;
+  font-size: 1.04rem;
+}
+
+/* ========== HERO SECTION ========== */
+.firstsection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 110px 20px;
+}
+
+.leftsection {
+  width: 40%;
+  font-size: 2.5rem;
+  line-height: 1.4;
+}
+
+.leftsection p {
+  margin-bottom: 10px;
+}
+
+#typed-text {
+  color: #1d1e1e;
+  font-weight: bold;
+  margin-top: 5px;
+  font-size: 2.2rem;
+}
+
+.rightsection {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rightsection img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== CONTACT BUTTON ========== */
+.contact-fixed-btn {
+  position: absolute;
+  bottom: 100px;
+  left: 200px;
+  padding: 12px 20px;
+  background-color: #1d1e1e;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-fixed-btn:hover {
+  background-color: #4c4c4d;
+  transform: scale(1.05);
+}
+
+/* ========== ABOUT SECTION ========== */
+#about {
+  background-color: #606868;
+  padding: 50px 20px;
+  color: white;
+  text-align: center;
+}
+
+.about-section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.about-section h1 {
+  font-size: 2.5em;
+  color: #1d1e1e;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 1.1em;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+.about-section span {
+  font-weight: bold;
+  color: #1d1e1e;
+}
+
+.about-section figure {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #1d1e1e;
+  display: block;
+  margin: 0 auto;
+}
+
+.about-section figcaption {
+  margin-top: 15px;
+  font-size: 1em;
+  color: #1d1e1e;
+}
+
+.about-section figcaption p:first-child {
+  font-weight: bold;
+  font-size: 0.9em;
+  margin-bottom: 5px;
+}
+
+/* ========== BRANDS SECTION ========== */
+.brands-wrapper {
+  padding: 100px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+.brands-wrapper h3 {
+  color: #1d1e1e;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.brands-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.brand img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.brand img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.brand p {
+  color: #1d1e1e;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* ========== ACCESSORIES SECTION ========== */
+.accessories-wrapper {
+  padding: 100px 20px;
+  background-color: #E6E6FA;
+  text-align: center;
+}
+
+.accessories-wrapper h3 {
+  color: #1d1e1e;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.accessories-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.accessory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.accessory img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.accessory img:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
+}
+
+.accessory p {
+  color: #1d1e1e;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.footer-icons a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: #1da1f2;
+  transform: scale(1.2);
+}
+
+.footer-info p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.footer-text {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.footer-dev {
+  font-size: 13px;
+  color: #bbb;
+  margin-top: 5px;
+}
+
+/* ========== UTILITIES ========== */
+.purple {
+  color: #1d1e1e;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    padding: 20px;
+    height: auto;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links ul li {
+    margin: 10px 0;
+  }
+
+  .firstsection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftsection,
+  .rightsection {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+
+  .leftsection {
+    font-size: 2rem;
+  }
+
+  #typed-text {
+    font-size: 1.8rem;
+  }
+
+  .contact-fixed-btn {
+    position: static;
+    margin: 20px auto;
+    display: inline-block;
+  }
+
+  .brands-wrapper h3,
+  .accessories-wrapper h3 {
+    font-size: 1.4rem;
+  }
+
+  .brand,
+  .accessory {
+    width: 90px;
+  }
+
+  .brand img,
+  .accessory img {
+    max-width: 70px;
+  }
+
+  .brand p,
+  .accessory p {
+    font-size: 0.9rem;
+  }
+
+  #about {
+    padding: 30px 15px;
+  }
+
+  .about-section h1 {
+    font-size: 2em;
+  }
+
+  .about-section p {
+    font-size: 1em;
+  }
+
+  .about-section img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section h1 {
+    font-size: 1.7em;
+  }
